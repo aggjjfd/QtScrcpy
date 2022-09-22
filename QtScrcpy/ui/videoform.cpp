@@ -486,7 +486,7 @@ void VideoForm::switchFullScreen()
     } else {
         // 横屏全屏铺满全屏，不保持宽高比
         if (m_widthHeightRatio > 1.0f) {
-            ui->keepRatioWidget->setWidthHeightRatio(-1.0f);
+            ui->keepRatioWidget->setWidthHeightRatio(m_widthHeightRatio);
         }
 
         // record current size before fullscreen, it will be used to rollback size after exit fullscreen.
